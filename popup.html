@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="bar">
+    <select id="projectSelect" title="Vídeos salvos"></select>
+    <button id="newProject" title="Novo vídeo">Novo</button>
+    <button id="deleteProject" class="danger" title="Excluir este vídeo">🗑</button>
+  </div>
+
+  <label class="switch" title="Mostrar e usar segundos nos campos e no resultado">
+    <input type="checkbox" id="showSeconds">
+    <span class="track"><span class="thumb"></span></span>
+    <span>Usar segundos</span>
+  </label>
+
+  <input id="title" class="full" type="text" placeholder="Título do vídeo (só para identificar)">
+
+  <section>
+    <h2>1. Origens e início</h2>
+    <p class="hint">Marque o <b>mesmo ponto do conteúdo</b> em cada origem. Ex.: o início da Parte 2 no YouTube = 0 h 00 min, na Twitch = 3 h 48 min.</p>
+    <div id="sources"></div>
+    <button id="addSource" class="add">+ Adicionar origem</button>
+  </section>
+
+  <section>
+    <h2>2. Minutagem atual</h2>
+    <div class="row">
+      <select id="curSource"></select>
+      <div id="curTime"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Resultado</h2>
+    <div id="results"></div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

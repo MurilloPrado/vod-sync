@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "VOD Sync",
+  "version": "1.0.0",
+  "description": "Converte a minutagem de um vídeo entre diferentes origens (YouTube, Twitch, Kick...).",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "VOD Sync",
+    "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": { "id": "vod-sync@local" }
+  }
+}
